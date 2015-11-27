@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>NFL Stats Analysis</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="NFL">
+
+    <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</head>
+<body>
+    <div class="page-wrap">
+        {% block content %}{% endblock %}
+    </div>
+    <!--<footer>-->
+        <!--&copy; NFL STATS-->
+    <!--</footer>-->
+</body>
+</html>

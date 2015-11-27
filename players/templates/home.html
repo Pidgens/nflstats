@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="main-page">
+    <div class="form-title">
+        <span>
+            ENTER TITLE HERE
+        </span>
+    </div>
+    <div class="form-wrapper">
+        <form class="enter-player" method="post">
+            <input type="text" name="player" placeholder="T.Brady", value="T.Brady">
+            <br>
+            <input type="number" name="week" placeholder="1-17", value="3">
+            <br>
+            <input type="number" name="year" placeholder="2015", value="2015">
+            <br>
+            <input class="player-submit" type="submit">
+        </form>
+
+        <!--{% include "stats.html" with stats=player.name %}-->
+    </div>
+
+</main>
+
+{% endblock %}
